@@ -16,6 +16,14 @@ La guinda han sido los preprocesadores y **SASS/SCSS**, con lo que ahora podremo
 
 Esta última sesión será puramente práctica y los protagonistas seremos todos. Podemos resolver dudas y problemas de ejercicios anteriores o podemos lanzarnos a un último ejercicio práctico.
 
+### Comandos:
+
+Install dependencies (only first time):
+> npm install
+
+Dev mode:
+> npm run dev
+
 ### Práctica:
 
 Maquetar las versiones mobile, tablet y desktop de la home de Apple. Podemos usar Bootstrap y SASS, y debemos aplicar BEM en las nuevas clases que generemos.
@@ -33,11 +41,3 @@ Versión desktop:
 ![readme/desktop.png](readme/desktop.png)
 
 ¡Ha sido un placer chicos! Os esperamos con muchas ganas en el siguiente bloque de conocimiento 💪🏼
-
-### Tips:
-
-Install dependencies (only first time):
-> npm install
-
-Dev mode:
-> npm run dev
