@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
+  mode: 'development',
   entry: {
     app: ['@babel/polyfill', './src/app/index.js'],
   },
@@ -14,6 +15,7 @@ module.exports = {
   },
   devServer: {
     port: 4000,
+    watchFiles: ['src/index.html']
   },
   module: {
     rules: [
@@ -26,12 +28,12 @@ module.exports = {
         loader: 'babel-loader',
       },
       {
-        test: /\.scss$/,
-        loader: [
-          MiniCssExtractPlugin.loader,
-          "css-loader?url=false",
-          'sass-loader'
-        ]
+        test: /\.s[ac]ss$/i,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+        ],
       },
     ],
   },
@@ -56,8 +58,8 @@ module.exports = {
       ],
     }),
     new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery",
+      $: 'jquery',
+      jQuery: 'jquery',
       Popper: ['popper.js', 'default']
     })
   ],

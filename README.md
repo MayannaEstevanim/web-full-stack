@@ -16,7 +16,7 @@ La guinda han sido los preprocesadores y **SASS/SCSS**, con lo que ahora podremo
 
 Esta última sesión será puramente práctica y los protagonistas seremos todos. Podemos resolver dudas y problemas de ejercicios anteriores o podemos lanzarnos a un último ejercicio práctico.
 
-### Comandos:
+### Comandos (NODE v16):
 
 Install dependencies (only first time):
 > npm install

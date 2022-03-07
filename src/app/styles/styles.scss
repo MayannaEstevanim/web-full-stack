@@ -1,4 +1,6 @@
-@import './custom';
+@import './bootstrap';
+@import './helpers';
+@import './responsive';
 @import './variables';
 
 * {
@@ -12,7 +14,6 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  background-color: blanchedalmond;
   text-align: center;
 }
 
@@ -24,3 +25,4 @@ body {
 .main {
   height: calc(100% - 80px);
 }
+
