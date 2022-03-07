@@ -22,7 +22,7 @@ Install dependencies (only first time):
 > npm install
 
 Dev mode:
-> npm run dev
+> npm start
 
 ### Práctica:
 
