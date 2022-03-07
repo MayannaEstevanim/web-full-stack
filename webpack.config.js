@@ -12,6 +12,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'js/app.bundle.js',
+    assetModuleFilename: "assets/[name][ext]",
   },
   devServer: {
     port: 4000,
@@ -19,10 +20,6 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /.(jpg|jpeg|png|svg)$/,
-        use: ['file-loader'],
-      },
       {
         test: /\.js$/,
         loader: 'babel-loader',
