@@ -11,18 +11,181 @@ html, body {
   height: 100%;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+.botonMenu {
+  margin: 0 auto;
+  margin-right: 900px;
+  display: block;
+  width: 40px;
+  height: 36px;
+  padding: 10px;
+  border-radius: 7px;
+  background: white;
+  color: white;
+  cursor: pointer;
+  position: relative;
 }
 
-.header {
-  height: 80px;
-  background-color: cornflowerblue;
+.botonMenu span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: black;
+  margin-top: 7px;
+  font-size: 24px;
+}
+
+.label {
+  cursor: pointer;
+}
+
+#menu-toggle {
+display: none;
+}
+
+#trickMenu {
+display: none;
+text-align: center;
+background: white;
+padding: 10px 0;
+}
+
+#trickMenu li a {
+display: block;
+font-size: 24px;
+padding: 0 auto;
+color: black;
+}
+
+.logo {
+margin-right: 50%;
+height: 70px;
+position: absolute;
+top: 1%;
+left: 19%;
+}
+
+.wrapper {
+display: flex;
+height: calc (100% - 80%);
+justify-content: center;
+}
+
+.form-input {
+position: relative;
+
+.form-input__icon {
+  position: absolute;
+  right: 7px;
+  top: 7px
+}
+}
+
+body {
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+
+.header_contenedor {
+display: flex;
+height: 80px;
+background-color: rgb(240, 230, 230);
+}
+
+.wrapper {
+  position: absolute;
+top: 1%;
+left: 30%;
+}
+
+.space_menu_container {
+  position: absolute;
+top: 5%;
+right: 10%;
+}
+
+.lista_menu {
+  display: flex;
+  padding: 2;
+  border: transparent
+}
+
+.linha_menu {
+  list-style-type: none;
+  padding: 1px;
+  border-right: transparent
+}
+
+.recogida_dia {
+  margin-left: 22%;
+  height: 35px;
+}
+
+.loggin {
+  margin-left: 85%;
+  height: 35px;
 }
 
 .main {
   height: calc(100% - 80px);
+  background-color: white;
 }
 
+.container2 {
+background-color: rgb(240, 230, 230);
+}
+
+.ul {
+    display: inline-flex;
+    padding: 2;
+    margin: 0;
+    border: 1px solid white;
+  }
+  
+  li {
+    list-style-type: none;
+    padding: 1px;
+    border-right: 0.5px solid black;  
+  }
+
+.home.container4 {
+  display: grid;
+}
+
+.menu3 {
+  background-color: white;
+}
+
+#fotos {
+justify-content: space-between;
+
+}
+#fotos {
+display: flex;
+justify-content: center;
+}
+
+/* ahora empieza la segunda parte*/
+
+.grid_modamujer {
+display: grid;
+grid-template-columns: 1fr 1fr;  
+}
+
+
+
+/* ahora empieza la tercer parte*/
+
+.grid_hombre {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr; 
+
+}
+
+.caja1 {
+  grid: 0%;
+}
+
+.foto5 {
+  align-self: center;
+}
