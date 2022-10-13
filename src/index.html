@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Project_final_ElCorteIngles</title>
+    <title>my-first-static-web</title>
     <link
       rel="stylesheet"
       href="https://necolas.github.io/normalize.css/latest/normalize.css"/>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap-grid.min.css" rel="stylesheet">
   </head>
   <body>
-    <header class= header_contenedor>
+    <header class= "menu_contenedor">
       <div class="navigation_sign">
       </div>
             <nav class="menuHTML">
@@ -45,7 +46,7 @@
         </nav>
       </div> 
         <div class="logo1">
-          <img class="logo" src="assets/el-corte-ingles-vector-logo.png" alt="logo_corteIngles">
+          <img class="logo" src="assets/el-corte-ingles_logo.png" alt="el-corte-ingles_logo">
         </div>
         <div class="wrapper">
           <div class="form-input">
@@ -53,45 +54,35 @@
             <spam class="fa-solid fa-magnifying-glass form-input__icon"></spam>
           </div>
         </div>
-        <section class="selection">
+        <section class="selection_container">
         <div class="menu2">
           <nav class="space_menu_container">
-            <u class="lista_menu">  
-            <li class="linha_menu"><a style= "color:black" class="space_menu" href="  ">Consulta de Pedidos</a></li>
-            <li class="linha_menu"><a style= "color:black" class="space_menu" href=" ">Nuestra Trajeta</a></li>
-            <li class="linha_menu"><a style= "color:black" class="space_menu" href=" ">Nuestras Tiendas</a></li>
-            <li class="linha_menu"><a style= "color:black" class="space_menu" href=" ">Ayuda</a></li>
-            <li class="linha_menu"><div class="button-container">
-            <span class="fa fa-user"style=" "></span>
-            <button>
-            Iniciar sesion
-          </button>
-          </li>
-      <div class="button_market">
-        <button type="button" class="btn btn-primary"> 
-          <spam class="fa-solid fa-bag-shopping"></spam>
-        </button>
-        </div>
-      </u>
-    </nav>
+            <div class="lista_menu">  
+              <div><a style= "color:black" class="space_menu" href="  ">Consulta de Pedidos</a></div>
+              <div><a style= "color:black" class="space_menu" href=" ">Nuestra Trajeta</a></div>
+              <div><a style= "color:black" class="space_menu" href=" ">Nuestras Tiendas</a></div>
+              <div><a style= "color:black" class="space_menu" href=" ">Ayuda</a></div>
+            </div>  
+          </nav>
+            <div><div class="button-container"><span class="fa fa-user"style=" "></span><button> Iniciar sesion </button></div>
+            <div><div class="button_market"><button type="button" class="btn btn-primary"><spam class="fa-solid fa-bag-shopping"></spam></button></div>
+          </div>
           </section>
-      </div>
-    </header>
-      <main class="main">
-      <div class="Container2">
-        <div class="recogida">
-          <label class="container1">Todos los productos
-            <input type="checkbox" checked="checked">
-            <span class="checkmark"></span>
-          </label>
-          <label class="container1">Entrega o regogída en el día
-            <input type="checkbox">
-            <span class="checkmark"></span>
-          </label>
-            <div class="recogida_dia">
-              <p> ver solo los productos con entrega o recogida hoy</p>
-            </div>
         </div>
+    </header>
+    <div class="recogida_container">
+      <label class="container1">Todos los productos
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container1">Entrega o regogída en el día
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+        <div class="recogida_dia">
+          <p> ver solo los productos con entrega o recogida hoy</p>
+        </div>
+      <main class="main">
         <div class="menu3">
           <nav class="space_menu2">
             <u class="ul">   
@@ -107,10 +98,10 @@
           <h4> DÍAS DE BELLEZA</h4>
         </div>
         <div>
-          <p>Del 28 de septiembre al 11 de octubre. <h5>¡ÚLTIMO DÍA!</h5></p>
+          <p>Del 28 de septiembre al 11 de octubre. <h6 style="color:red">¡ÚLTIMOS DÍAS!</h6></p>
         </div>
         <div>
-          <p style="color:red"20% DE REGALO></P>
+          <h6 style="color:red" 20% DE REGALO></h6>
             <p> PERFUMERÍA Y PARAFARMACIA
             Clinique, Givenchy, Rituals, Sesderma, Caudalie y más.</p>
         </div>
@@ -122,7 +113,7 @@
           <button type="button" class="btn btn-primary">Descubre más</button>
         </div>
         <div class="grid_modamujer">
-          <div class="foto" href=" "><img src="/assets/foto_03_main2.png"><p>TODO* -25%
+          <div class="foto3" href=" "><img src="/assets/foto_03_main2.png"><p>TODO* -25%
             SEMANA DE LA LENCERÍA
             Del 6 al 16 de octubre.
             DESCUBRE MÁS</p></div>
@@ -136,6 +127,9 @@
           <div class="caja1"><h4>Emidio Tucci</h4><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At recusandae quo inventore aliquam architecto omnis, eos magnam cupiditate ab illo aliquid. Cum aperiam laudantium perspiciatis fugit reiciendis doloremque quidem asperiores.</p> </div>
           <div class="foto5" href=" "><img src="/assets/foto_05_main3.png"></div>
           <div class="foto6" href=" "><img src="/assets/foto_06_main3.png"></div> 
+        </div>
+        <div class="button2">
+          <button type="button" class="btn btn-primary">Descubre más</button>
         </div>
       </main>
   </body>

@@ -11,6 +11,20 @@ html, body {
   height: 100%;
 }
 
+
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+  }
+
+.menu_contenedor {
+  display: flex;
+  height: 80px;
+  background-color: rgb(240, 230, 230);
+  }
+  
 .botonMenu {
   margin: 0 auto;
   margin-right: 900px;
@@ -19,7 +33,7 @@ html, body {
   height: 36px;
   padding: 10px;
   border-radius: 7px;
-  background: white;
+  background: #e7e7e7;
   color: white;
   cursor: pointer;
   position: relative;
@@ -58,10 +72,10 @@ color: black;
 
 .logo {
 margin-right: 50%;
-height: 70px;
+height: 35px;
 position: absolute;
 top: 1%;
-left: 19%;
+left: 4%;
 }
 
 .wrapper {
@@ -72,6 +86,8 @@ justify-content: center;
 
 .form-input {
 position: relative;
+margin: 0%;
+left: -200px;
 
 .form-input__icon {
   position: absolute;
@@ -80,59 +96,56 @@ position: relative;
 }
 }
 
-body {
-display: flex;
-flex-direction: column;
-text-align: center;
-}
-
-.header_contenedor {
-display: flex;
-height: 80px;
-background-color: rgb(240, 230, 230);
-}
-
 .wrapper {
-  position: absolute;
+position: absolute;
 top: 1%;
 left: 30%;
 }
 
 .space_menu_container {
-  position: absolute;
-top: 5%;
-right: 10%;
+position: absolute;
+top: 1%;
+right: 35%;
 }
 
 .lista_menu {
-  display: flex;
-  padding: 2;
-  border: transparent
+display: inline-flex;
+flex-wrap: wrap;
 }
 
-.linha_menu {
-  list-style-type: none;
-  padding: 1px;
-  border-right: transparent
+.lista_menu > div {
+margin: 6px;
+}
+  
+.button-container {
+position: absolute;
+top: 1%;
+right: 330px;
+
+}
+
+.button_market {
+position: absolute;
+top: 1%;
+right: 250px;
+background-color: #e7e7e7;
+}
+
+//** finaliza header **//
+
+.recogida_container {
+  display: row;
+  margin-right: 30px;
+  margin-top: 15px;
 }
 
 .recogida_dia {
   margin-left: 22%;
   height: 35px;
 }
-
-.loggin {
-  margin-left: 85%;
-  height: 35px;
-}
-
 .main {
   height: calc(100% - 80px);
   background-color: white;
-}
-
-.container2 {
-background-color: rgb(240, 230, 230);
 }
 
 .ul {
@@ -145,7 +158,8 @@ background-color: rgb(240, 230, 230);
   li {
     list-style-type: none;
     padding: 1px;
-    border-right: 0.5px solid black;  
+    border-right: 0.5px solid black
+    
   }
 
 .home.container4 {
@@ -157,14 +171,16 @@ background-color: rgb(240, 230, 230);
 }
 
 #fotos {
-justify-content: space-between;
-
-}
-#fotos {
 display: flex;
 justify-content: center;
+margin-block-end: 25px;
 }
 
+.btn-primary {
+  border-color: #040404;
+  background-color: #ffffff;
+
+}
 /* ahora empieza la segunda parte*/
 
 .grid_modamujer {
@@ -172,20 +188,53 @@ display: grid;
 grid-template-columns: 1fr 1fr;  
 }
 
-
+.foto3 {
+  margin-top: 100px;
+}
 
 /* ahora empieza la tercer parte*/
 
+
 .grid_hombre {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  
+  }
+  
+  .caja1 {
+    grid: 0%;
+  }
+  
+  .foto5 {
+    align-self: center;
+    
+  }
+  
 
+.button2 {
+  border-color: #040404;
+  background-color: #ffffff;
+  margin-right: 70px;
+  }
+
+
+  
+  //**MOBILE FIRST **//
+
+
+
+  //**TABLET **//
+  @media screen and (min-width: 780px) {
+    
+  .selection_container {height: 600px;
+      height: 60vh;
+      justify-content: center;
+      flex-wrap: wrap;
+
+  }
 }
 
-.caja1 {
-  grid: 0%;
-}
+ //**DESKTOP **//
 
-.foto5 {
-  align-self: center;
-}
+
+  
